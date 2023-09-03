@@ -1,0 +1,71 @@
+@import "@style/variables.scss";
+
+.header {
+    border-bottom: 1px solid $MAIN;
+    padding: 1.5rem;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__contacts {
+    display: flex;
+
+    font-size: 1.2rem;
+}
+
+.header__location {
+    display: flex;
+    align-items: center;
+
+    margin-right: 1rem;
+
+    & img {
+        margin-right: 1rem;
+    }
+}
+
+.header__telephone {
+    display: flex;
+    align-items: center;
+
+    & img {
+        margin-right: 1rem;
+    }
+}
+
+.header__shop {
+    display: flex;
+    align-items: center;
+
+    & .header__love {
+        margin-right: 3.3rem;
+    }
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+
+    & a:hover {
+        transition: .3s;
+        color: $MAIN;
+    }
+}

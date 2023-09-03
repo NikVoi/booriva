@@ -1,0 +1,99 @@
+@import "@style/variables.scss";
+
+.footer {
+    width: 100%;
+    height: 24rem;
+    background-color: $MAIN;
+
+    & .container {
+        height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+
+.footer__logo {
+    width: 15rem;
+    height: 6rem;
+
+    padding-top: 6rem;
+    margin-top: -1.5rem;
+    
+    & * {
+        fill: $MAIN_SECOND;
+    }
+}
+
+.footer__block {
+    padding-top: 6rem;
+
+    font-size: 1.2rem;
+
+    & h2 {
+        margin-bottom: 1.4rem;
+
+        text-transform: uppercase;
+        color: $MAIN_SECOND;
+    }
+
+    & h3 {
+        color: $WHITE;
+
+        margin-bottom: 1rem;
+    }
+
+  
+}
+
+.footer__block > nav {
+
+    & a {
+        display: block;
+        margin-bottom: 1rem;
+        color: $WHITE;
+
+        &:hover {
+            transition: .3s;
+            color: $BLACK;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.footer__link  {
+    &:first-child {
+        margin-right: 1.6rem;
+    }
+}
+
+.footer__about {
+    display: flex;
+
+    padding-top: 6rem;
+}
+
+.footer__creator {
+    margin-right: 3rem;
+}
+
+.footer__feedback {
+    width: 16rem;
+
+    font-size: 1.2rem;
+    color: $WHITE;
+
+    & h3 {
+        margin-bottom: 2rem;
+    }
+
+    & a {
+        color: $MAIN_SECOND;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+}
