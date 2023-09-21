@@ -1,0 +1,24 @@
+.costumes {
+    margin-top: 6rem;
+
+    & .button__custom {
+        margin: 0 auto;
+    }
+}
+
+
+.costumes__wrapper {
+    display: flex;
+
+    margin-bottom: 3rem;
+
+    & img {
+        object-fit: cover;
+    }
+}
+
+.costumes__img {
+    width: 25%;
+
+    cursor: pointer;
+}

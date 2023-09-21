@@ -1,0 +1,71 @@
+@import "@style/variables.scss";
+
+.location > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location__wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    font-size: 1.6rem;
+
+
+    margin-bottom: 5.5rem;
+    margin-top: 6rem;
+}
+
+.location__info {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    width: 22.1rem;
+
+    margin-right: 1.5rem;
+
+    & p {
+        width: 100%;
+
+        &:first-child {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.location__description {
+    width: 23.4rem;
+    margin-left: 1.5rem;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding-bottom: 15rem;
+    
+    line-height: 2rem;
+}
+
+.location__img-top,
+.location__img-bottom,
+.location__title {
+    position: absolute;
+}
+
+.location__img-top {
+    right: 10rem;
+}
+
+.location__img-bottom {
+    bottom: -12rem;
+    left: 20rem;
+}
+
+.location__title {
+    top: 12rem;
+    left: 4rem;
+}

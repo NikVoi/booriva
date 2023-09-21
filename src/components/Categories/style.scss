@@ -1,0 +1,117 @@
+@import "@style/variables.scss";
+
+.categories {
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+.categories>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories__wrapper {
+    display: grid;
+    gap: .5rem;
+
+    &--left {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 34rem 30rem ;
+
+        width: 100%;
+
+        .categories__item {
+            &:nth-child(1) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                & .button__noClick {
+                    bottom: 3rem;
+                    left: 10rem
+                }
+
+            }
+
+            &:nth-child(2) .button__noClick {
+                bottom: 10rem;
+                right: 10rem
+            }
+
+            &:nth-child(3) .button__noClick {
+                bottom: 5rem;
+                right: 12rem
+            }
+        }
+    }
+
+    &--right {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 30rem 34rem ;
+        width: 100%;
+
+        .categories__item {
+            &:nth-child(1) .button__noClick {
+                rotate: (-55deg);
+                bottom: 10rem;
+                right: 6rem;
+            }
+
+            &:nth-child(2) .button__noClick {
+                bottom: 5rem;
+                right: 13rem;
+            }
+
+            &:nth-child(3) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                & .button__noClick {
+                    rotate: (50deg);
+                    bottom: 6rem;
+                    left: 11rem
+                }
+
+            }
+        }
+    }
+}
+
+.categories__item {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    & p {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    &:hover * {
+        transition: .3s;
+
+        fill: $MAIN_SECOND;
+    }
+
+    & .button__noClick {
+        position: absolute;
+    }
+}
+
+.categories__img {
+    object-fit: cover;
+
+    &:hover {
+        transition: .3s;
+        transform: scale(1.2)
+    }
+}

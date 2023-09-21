@@ -1,0 +1,45 @@
+@import "@style/variables.scss";
+
+.CrawlLine {
+    padding: 1rem 0;
+    margin-top: 8rem;
+
+    width: 100%;
+    height: 8rem;
+
+    background-color: $MAIN;
+}
+
+.CrawlLine__border {
+    display: flex;
+
+    padding: 1rem 0;
+    overflow: hidden;
+
+    border-top: 2px solid $MAIN_SECOND;
+    border-bottom: 2px solid $MAIN_SECOND;
+
+    color: $MAIN_SECOND;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+    & p {
+        white-space: nowrap;
+        margin-left: 3rem;
+
+        animation: infinityAnimation 5s linear infinite;
+        animation-timing-function: linear;
+    }
+
+}
+
+@keyframes infinityAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-112%);
+    }
+}

@@ -1,0 +1,50 @@
+@import "@style/variables.scss";
+
+.product {
+    margin-top: 2rem;
+
+}
+
+.product__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 3rem;
+}
+
+.container {
+    & .button__custom {
+        margin: 0 auto;
+    }
+}
+
+.product__cardS {
+    & .card {
+        width: 27rem;
+        height: 30rem;
+
+        &:first-child {
+            margin-bottom: 1rem;
+        }
+    }
+
+    & .card__title {
+        width: 17rem;
+    }
+
+    & .card__wrapper {
+        margin-top: 1.3rem;
+
+    }
+}
+
+.product__cardM {
+    & .card__wrapper {
+        margin-top: 1.3rem;
+
+    }
+
+    & .card__title {
+        width: 22rem;
+    }
+}

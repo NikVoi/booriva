@@ -1,0 +1,21 @@
+@import "@style/variables.scss";
+
+.button__noClick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--bg {
+        position: absolute;
+    }
+
+    & h2 {
+        position: relative;
+
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+    }
+
+}

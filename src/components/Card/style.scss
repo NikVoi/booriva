@@ -1,0 +1,45 @@
+@import "@style/variables.scss";
+
+.card {
+    position: relative;
+
+    cursor: pointer;
+
+}
+
+.card__like {
+    position: absolute;
+
+    top: 1.5rem;
+    right: 1.5rem;
+
+    cursor: pointer;
+}
+
+.card__img {
+    border-bottom: 2px solid $MAIN;
+    border-radius: .2rem;
+}
+
+.card__wrapper {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.card__title {
+    width: 15rem;
+
+    color: $BLACK;
+    font-size: 1.6rem;
+}
+
+.card__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    font-size: 1.6rem;
+    color: $MAIN;
+    font-weight: 600;
+}

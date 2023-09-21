@@ -9,14 +9,14 @@ import HeaderActive from "./HeaderActive/HeaderActive";
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <div className="container">
-        <div className="header__top">
+        <section className="header__top">
           <div className="header__contacts">
-            <div className="header__location">
+            <address className="header__location">
               <img src={location} alt="" />
               Киев, Нижний вал, 37
-            </div>
+            </address>
             <div className="header__telephone">
               <img src={phone} alt="" />
               +38 063 843 34 71
@@ -38,13 +38,13 @@ const Header = () => {
           <div className="header__shop">
             <HeaderActive />
           </div>
-        </div>
+        </section>
 
-        <div className="header__bottom">
+        <section className="header__bottom">
           <BottomNav />
-        </div>
+        </section>
       </div>
-    </div>
+    </header>
   );
 };
 

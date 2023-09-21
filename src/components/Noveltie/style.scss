@@ -1,0 +1,27 @@
+.novelties {
+    margin-bottom: 6rem;
+
+    & .card {
+        width: 32rem;
+
+        & .card__img {
+            width: 32rem;
+        }
+
+        & .card__wrapper {
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.novelties__list {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 3rem;
+}
