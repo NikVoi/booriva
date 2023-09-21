@@ -1,4 +1,5 @@
 
+import Delivery from "@components/Delivery/Derms";
 import Exchanges from "@components/Exchanges/Exchanges";
 import Footer from "@components/Footer/Footer";
 import Instagram from "@components/Instagram/Instagram";
@@ -10,7 +11,7 @@ export default function App() {
     <div className="wrapper">
       <Header />
       
-      <Exchanges/>
+      <Delivery/>
 
       <Instagram/>
       <Footer />
