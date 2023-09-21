@@ -1,0 +1,79 @@
+@import "@style/variables.scss";
+
+.loyalty > .container{
+}
+
+.loyalty__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+
+    width: 100rem;
+
+
+    
+}
+
+.loyalty__item {
+    display: flex;
+
+    border: .1rem solid $MAIN;
+    border-radius: .5rem;
+
+    &:first-child {
+        margin-bottom: 2rem;
+    }
+    
+    padding: 2rem;
+}
+
+.loyalty__img {
+    text-align: center;
+    margin-right: 4rem;
+    & img {
+        width: 27rem;
+        height: 27rem;
+
+        
+    }
+
+    h2 {
+        margin-top: 1rem;
+
+        font-size: 4.2rem;
+        color: $MAIN;
+        font-weight: 600;
+    }
+
+    h3 {
+        margin-top: 1rem;
+
+        text-transform: uppercase;
+        font-size: 2.8rem;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
+}
+
+.loyalty__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 35rem;
+
+    h3 {
+       margin-bottom: 4rem;
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+        color: $MAIN;
+    }
+}
